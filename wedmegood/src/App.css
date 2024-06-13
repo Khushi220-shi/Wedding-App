@@ -1,6 +1,14 @@
 @font-face{
   font-family: roboto;
-  src: url(./fonts/Roboto-Regular.ttf);
+  src: url(../src/assets/fonts/Roboto-Regular.ttf);
+}
+@font-face{
+  font-family: proxima;
+  src: url(./assets/fonts/proxima/Rene\ Bieder\ \ Milliard\ Book.otf);
+}
+@font-face {
+  font-family:italic;
+  src: url(./assets/fonts/italic/EBGaramond-VariableFont_wght.ttf);
 }
 *{
   margin: 0;
@@ -8,33 +16,21 @@
   box-sizing: border-box;
   font-family: roboto;
 }
-.dropdown-container {
-  /* background-color: #d81b60; */
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.dropdown {
-  width: 150px;
-  font-size: 16px;
-  color: #333;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: white;
-  background-image: none;
+li{
   cursor: pointer;
+  font-size: 15px;
+  color: #333;
+
+}
+li:hover{
+  color: black;
+  font-size: 16px;
+}
+.wedding-img{
+ background-image: linear-gradient(to top ,black,transparent),url(./assets/home.webp);
+  background-size: cover;
+  height: 700px;
 }
 
-.dropdown-container::after {
-  content:'';
-  font-size: 12px;
-  color: #333;
-  position: absolute;
-  margin-left: -20px;
-  margin-top: 5px;
-  pointer-events: none;
-}
+
+
