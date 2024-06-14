@@ -26,11 +26,22 @@ const Heading = () => {
   export const Heading2 = () => {
     return (
       <div className="m-auto" style={{width:'85%'}}>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between mb-3">
           <h4 className="fw-bold" style={{ color: "#4A4A4A" }}>
           Wedding Categories
           </h4>
           <p className="heading2" style={{color:'#E72E77',cursor:'pointer'}}>View all Categories<RiArrowRightSLine /> </p>
+        </div>
+      </div>
+    );
+  };
+  export const Heading3 = () => {
+    return (
+      <div className="m-auto" style={{width:'85%'}}>
+        <div className="d-flex justify-content-between mt-5 mb-2">
+          <h4 className="fw-bold" style={{ color: "#4A4A4A" }}>
+          WMG Inhouse Services  
+          </h4>
         </div>
       </div>
     );

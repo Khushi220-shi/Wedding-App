@@ -128,10 +128,57 @@ export const wedding=[
     {
         title:'Venues',
         text:'Banquet Halls, Lawns / Farmhouses , W...',
-        img:''
+        img:'./images/wedding/venues.jpeg',
+        backgroundColor:'#D8DFFC'
+    },
+    {
+        title:'Photographers',
+        text:'Photographers',
+        img:'./images/wedding/photoes.jpeg',
+        backgroundColor:'#F4D5C2'
+    },
+    {
+        title:'Makeup',
+        text:'Bridal Makeup, Family Makeup',
+        img:'./images/wedding/makeup.webp',
+        backgroundColor:'#DFB2AD'
+    },
+    {
+        title:'Pre Wedding Shoot ',
+        text:'Pre Wedding Shoot Locations, Pre Weddi...',
+        img:'./images/wedding/prewedding.jpeg',
+        backgroundColor:'#D8DFFC'
+    },
+    {
+        title:'Planning & Decor',
+        text:'Wedding Planners, Decorators',
+        img:'./images/wedding/decoration.jpeg',
+        backgroundColor:'#F6B896'
+    },
+    {
+        title:'Bridal Wear',
+        text:'Bridal Lehengas, Kanjeevaram / Silk Sarees',
+        img:'./images/wedding/bridalwear.webp',
+        backgroundColor:'#CFCDB8'
+    },
+]
+export const WMG=[
+    {
+        img:'./images/weg/family.jpeg',
+        title:'Wedsta',
+        text:'WMG At Home, Family Makeup Services'
+    },
+    {
+        img:'./images/weg/couple.jpeg',
+        title:'Genie Services',
+        text:'Plan your dream wedding in your budget'
+    },
+    {
+        img:'./images/weg/venue.jpeg',
+        title:'Venue Booking Service',
+        text:'Best Price Guaranteed'
     }
 ]
-
 
 
 

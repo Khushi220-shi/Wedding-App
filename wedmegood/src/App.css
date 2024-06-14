@@ -12,11 +12,10 @@
 }
 *{
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: roboto;
-
 }
+
 img{
   width: 100%;
 }
@@ -74,4 +73,16 @@ img{
 }
 .heading2:hover{
   color: #af2b60 !important;
+}
+.abc{
+  clip-path: ellipse(99% 140px at 100% 50%);
+}
+.max-width-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 50px;
+}
+.know:hover{
+  background-color: #E72E77 !important;
+  color: white !important;
 }
