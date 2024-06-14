@@ -15,14 +15,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: roboto;
+
 }
-li{
+img{
+  width: 100%;
+}
+.list li{
   cursor: pointer;
   font-size: 15px;
   color: #333;
 
 }
-li:hover{
+.list li:hover{
   color: black;
   font-size: 16px;
 }
@@ -31,6 +35,43 @@ li:hover{
   background-size: cover;
   height: 700px;
 }
+.more{
+  font-size: 14px;
+}
+.more:hover{
+  text-decoration: underline;
+  color: #B4245D;
+  font-size: 15px;
+}
 
+.slick-arrow{
+  width: 30px !important;
+  height: 29px !important;
+  padding: 5px !important;
+  padding-top: 6px !important;
+  border-radius: 100%;
+  background-color: black!important;
+  box-shadow: 1px 1px 20px black;
+  z-index: 1 !important;
+}
+.slick-arrow:hover{
+  background-color: #E72E77 !important;
+  box-shadow: 1px 1px 20px #E72E77;
+}
+.search:hover{
+  color: #E72E77;
+}
 
-
+.zoom{
+  overflow: hidden;
+}
+ .zoom img{
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.zoom:hover img {
+  transform: scale(1.5);
+}
+.heading2:hover{
+  color: #af2b60 !important;
+}

@@ -9,7 +9,7 @@ const Header1 = () => {
         <div style={{backgroundColor:'#E72E77'}} className="d-flex justify-content-between">
             <nav className="navbar navbar-expand-lg">
               <div className="container-fluid">
-                <img className="navbar-brand p-2 ps-5" src={logo} href="#" />
+                <img className="navbar-brand p-2 ps-5" src={logo} style={{width:'250px'}} href="#" />
                 <button
                   className="navbar-toggler"
                   type="button"

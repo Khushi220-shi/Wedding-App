@@ -7,7 +7,7 @@ const Main = () => {
       <div className='wedding-img'>
         <div className='text-center'>
           <div className='image'>
-          <h1 className='text-light fw-bold'style={{paddingTop:'450px'}}>Your Wedding, Your Way</h1>
+          <h1 className='text-light fw-bold 'style={{paddingTop:'450px'}}>Your Wedding, Your Way</h1>
             <h5 className='text-light fw-medium'>Find the best wedding vendors with thousands of trusted reviews</h5>
             <div className="input-group mt-3" style={{width:'100%',display:'flex',justifyContent:'center'}}>
             <div className="dropdown">
