@@ -179,6 +179,142 @@ export const WMG=[
         text:'Best Price Guaranteed'
     }
 ]
+export const realWedding=[
+    {
+        img:'./images/real/1.jpg',
+        title:'Sanjita and Vivek',
+        dec:'Two Potterheads` Bengali-Bihari Wedding in Goa With A Ton Of Customised Details',
+        date:'27 November 2023'
+    },
+    {
+        img:'./images/real/2.jpg',
+        title:'Devika and Sanjeet',
+        dec:'Picture Perfect Udaipur Wedding Deeply Rooted In Tradition',
+        date:'18 June 2024'
+    },
+    {
+        img:'./images/real/3.jpg',
+        title:'Gayatri and Aditya',
+        dec:'Regal Palace Wedding In Jaipur Planned & Executed By The Bride!',
+        date:'21 January 2024'
+    },
+    {
+        img:'./images/real/4.jpg',
+        title:'Tanisha and Matthew',
+        dec:'Chic Goa Wedding With A Modern Bride In Red  The Style Meter! ',
+        date:'10 March 2023'
+    },
+    {
+        img:'./images/real/5.jpg',
+        title:'Yasmin and Karan',
+        dec:'A Beautiful Beachside Mumbai Wedding Celebrating Love Found Later In Life',
+        date:'07 April 2024'
+    },
+    {
+        img:'./images/real/6.jpg',
+        title:'Swastika and Karan',
+        dec:'Wedding With Pretty Details At A Venue That’s A Hidden Gem!',
+        date:'05 March 2024'
+    },
+    {
+        img:'./images/real/7.webp',
+        title:'Kuvam and Naman',
+        dec:'Fabulous Goa Wedding Which Ranks High On The Style Meter!',
+        date:'27 November 2023'
+    },
+    {
+        img:'./images/real/8.jpg',
+        title:'Madhuri and Adithya',
+        dec:'Stunning Andhra Wedding With A Bride Who Aced 8 Gorgeous Bridal Looks!',
+        date:'17 March 2023'
+    },
+    {
+        img:'./images/real/9.jpeg',
+        title:'Sagarika and Tushar',
+        dec:'Breezy Goa Wedding With A Traditional Touch & Sunset Pheras!',
+        date:'28 January 2024'
+    },
+    {
+        img:'./images/real/10.jpg',
+        title:'Anukrit and Shubham',
+        dec:'The Prettiest Udaipur Wedding With A Bride Who Wowed Us With Every Look!',
+        date:'21 September 2023'
+    },
 
+]
+export const gallery = [
+    {
+        img:'./images/gallery/bridal-lehenga.jpg',
+        title:'Bridal Lehenga'
+    },
+    {
+        img:'./images/gallery/Bridaloutfit.jpg',
+        title:'Outfits'
+    },
+    {
+        img:'./images/gallery/blosedesign.jpg',
+        title:'Blouse Designs'
+    },
+    {
+        img:'./images/gallery/saree.jpeg',
+        title:'Wedding Sarees'
+    },
+    {
+        img:'./images/gallery/mahendi.jpg',
+        title:'Mahendi Designs'
+    },
+    {
+        img:'./images/gallery/jewellery.webp',
+        title:'Wedding Jewellery'
+    },
+    {
+        img:'./images/gallery/makeup.jpg',
+        title:'Wedding Makeup'
+    },
+    {
+        img:'./images/gallery/hairstyle.jpg',
+        title:'Wedding HairStyles'
+    },
+    {
+        img:'./images/gallery/decoration.jpg',
+        title:'Wedding Decor'
+    },
+    {
+        img:'./images/gallery/photoshoot.jpeg',
+        title:'Wedding Photoshoot & ...'
+    },
+    {
+        img:'./images/gallery/prewedding.jpg',
+        title:'Pre Wedding Shoot'
+    },
+    {
+        img:'./images/gallery/groom.jpg',
+        title:'Groom Wedding Dresses'
+    },
+    {
+        img:'./images/gallery/invitation.jpg',
+        title:'Wedding Invitations'
+    },
+    {
+        img:'./images/gallery/accesories.jpeg',
+        title:'Wedding Accesories'
+    },
+    {
+        img:'./images/gallery/cake.jpg',
+        title:'Cakes'
+    },
+    {
+        img:'./images/gallery/idea.jpg',
+        title:'Unique Wedding Ideas'
+    },
+    {
+        img:'./images/gallery/venue.jpg',
+        title:'Wedding Venues'
+    },
+    {
+        img:'./images/gallery/gift.webp',
+        title:'Wedding Gifts'
+    },
+]
 
 

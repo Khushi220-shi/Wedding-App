@@ -6,10 +6,13 @@ import PopularVenue from "./PopularVenue";
 import PopularSearch from "./PopularSearch";
 import Heading, { Heading3 } from "./Heading";
 import { Heading1 } from "./Heading";
-import { Heading2 } from "./Heading";
+import { Heading2,Heading4,Heading5 } from "./Heading";
 import { WMG, wedding } from "../data";
 import WeddingCategory from "./WeddingCategory";
 import WMGServices from "./WMGServices";
+import MobileApp from "./MobileApp";
+import RealWedding from "./RealWedding";
+import Gallery from "./Gallery";
 const Home = () => {
   return (
     <div>
@@ -39,7 +42,7 @@ const Home = () => {
       }
       </div>
       <Heading3 />
-      <div>
+      <div className="row flex-row m-auto w-100 max-width-container flex-wrap" style={{maxWidth:'1200px'}}>
         {
           WMG.map((value,index)=>{
             return(
@@ -54,7 +57,13 @@ const Home = () => {
           })
         }
       </div>
-     
+    <div>
+    <MobileApp />
+    </div>
+    <Heading4 />
+    <RealWedding/>
+    <Heading5 />
+    <Gallery />
     </div>
   );
 };

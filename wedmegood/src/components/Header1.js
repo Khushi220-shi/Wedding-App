@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import logo from "../assets/logo.png";
 import { IoSearch } from "react-icons/io5";
+import Login from "../page/Login";
 
 const Header1 = () => {
   return (
@@ -65,7 +66,7 @@ const Header1 = () => {
             <div>
                 <div className="d-flex gap-5 me-3 " style={{alignItems:'center',marginTop:'10px'}}>
                     <IoSearch style={{color:'white', fontSize:'30px',backgroundColor:'#B4245D',cursor:'pointer'}} className="rounded-5 p-1"/>
-                    <button className="btn rounded-pill px-5 text-light"  style={{backgroundColor:'#B4245D',cursor:'pointer'}}>Log in</button>
+                    <button className="btn rounded-pill px-5 text-light" style={{backgroundColor:'#B4245D',cursor:'pointer'}}>Log in</button>
                 </div>
             </div>
           </div>

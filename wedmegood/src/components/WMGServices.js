@@ -3,11 +3,11 @@ import React from 'react'
 
 const WMGServices = ({img,title,text}) => {
   return (
-    <div>
-        <div style={{width:'500px',textAlign:'center',backgroundColor:'white'}}>
-            <div className=' p-3'>
-                <div className='zoom'>
-                <img src={img}></img>
+    <div className='col-6'>
+        <div className='pb-5 mb-3' style={{width:'580px',textAlign:'center',backgroundColor:'white',borderRadius:'5px',boxShadow:'1px 1px 5px 1px rgb(128,128,128,0.3)'}}>
+            <div className='p-3'>
+                <div className='zoom' style={{borderRadius:'5px'}}>
+                <img src={img} style={{height:'250px'}}></img>
                 </div>
             </div>
             <div>
@@ -16,7 +16,6 @@ const WMGServices = ({img,title,text}) => {
             </div>
             <Button/>
         </div>
-     
     </div>
   )
 }

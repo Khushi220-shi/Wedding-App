@@ -13,7 +13,7 @@
 *{
   margin: 0;
   box-sizing: border-box;
-  font-family: roboto;
+  font-family: proxima;
 }
 
 img{
@@ -30,9 +30,9 @@ img{
   font-size: 16px;
 }
 .wedding-img{
- background-image: linear-gradient(to top ,black,transparent),url(./assets/home.webp);
+ background-image: linear-gradient(to top ,black,transparent,transparent),url(./assets/home.webp);
   background-size: cover;
-  height: 700px;
+  height: 800px;
 }
 .more{
   font-size: 14px;
@@ -49,8 +49,8 @@ img{
   padding: 5px !important;
   padding-top: 6px !important;
   border-radius: 100%;
-  background-color: black!important;
-  box-shadow: 1px 1px 20px black;
+  background-color: rgb(209, 208, 208)!important;
+ 
   z-index: 1 !important;
 }
 .slick-arrow:hover{
@@ -65,11 +65,14 @@ img{
   overflow: hidden;
 }
  .zoom img{
-  width: 100%;
+  /* width: 100%; */
   transition: 0.5s all ease-in-out;
 }
 .zoom:hover img {
   transform: scale(1.5);
+}
+.gallery:hover{
+  color: #E72E77;
 }
 .heading2:hover{
   color: #af2b60 !important;
@@ -85,4 +88,7 @@ img{
 .know:hover{
   background-color: #E72E77 !important;
   color: white !important;
+}
+.download:hover{
+  background-color: #871744 !important;
 }
