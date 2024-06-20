@@ -4,15 +4,17 @@ import Header1 from "./Header1";
 import Main from "./Main";
 import PopularVenue from "./PopularVenue";
 import PopularSearch from "./PopularSearch";
-import Heading, { Heading3 } from "./Heading";
+import Heading, { Heading3, Heading7 } from "./Heading";
 import { Heading1 } from "./Heading";
-import { Heading2,Heading4,Heading5 } from "./Heading";
+import { Heading2,Heading4,Heading5,Heading6 } from "./Heading";
 import { WMG, wedding } from "../data";
 import WeddingCategory from "./WeddingCategory";
 import WMGServices from "./WMGServices";
 import MobileApp from "./MobileApp";
 import RealWedding from "./RealWedding";
 import Gallery from "./Gallery";
+import Featured from "./Featured";
+import Blog from "./Blog";
 const Home = () => {
   return (
     <div>
@@ -64,6 +66,10 @@ const Home = () => {
     <RealWedding/>
     <Heading5 />
     <Gallery />
+    <Heading6 />
+    <Featured />
+    <Heading7 />
+    <Blog />
     </div>
   );
 };

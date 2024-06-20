@@ -68,6 +68,28 @@ const Heading = () => {
       </div>
     );
   };
+  export const Heading6 = () => {
+    return (
+      <div className="m-auto " style={{width:'85%'}}>
+        <div className="d-flex justify-content-between mt-5 mb-2">
+          <h4 className="fw-bold" style={{ color: "#4A4A4A" }}>
+          Featured Vendors
+          </h4>
+        </div>
+      </div>
+    );
+  };
+  export const Heading7 = () => {
+    return (
+      <div className="m-auto " style={{width:'85%'}}>
+        <div className="d-flex justify-content-between mt-5 mb-2">
+          <h4 className="fw-bold" style={{ color: "#4A4A4A" }}>
+          Latest Blogs
+          </h4>
+        </div>
+      </div>
+    );
+  };
 
 export default Heading;
 

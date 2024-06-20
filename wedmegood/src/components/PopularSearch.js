@@ -20,8 +20,10 @@ const PopularSearch = ({img,text}) => {
         {
             search.map((value)=>(
                 <div>
+                <div style={{width:'250px'}}>
                 <div className='zoom'>
                     <img src={value.img} className='rounded-3' style={{width:'250px',height:'300px'}}/>
+                </div>
                 </div>
                 <div className='mt-2 text-secondary' style={{cursor:'pointer'}}>
                     <p className='search'>{value.text}</p>

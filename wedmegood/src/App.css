@@ -69,7 +69,7 @@ img{
   transition: 0.5s all ease-in-out;
 }
 .zoom:hover img {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .gallery:hover{
   color: #E72E77;

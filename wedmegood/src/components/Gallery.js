@@ -15,7 +15,7 @@ const Gallery = () => {
       };
   return (
     <div className='m-auto' style={{width:'85%'}}>
-        <div className='mt-5'>
+        <div className='mt-5 mb-5'>
            <Slider {...settings}>
            {
                 gallery.map((value)=>(

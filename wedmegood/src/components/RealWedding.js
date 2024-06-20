@@ -26,7 +26,7 @@ const RealWedding = () => {
                         <div className='zoom' style={{borderRadius:'5px'}}>
                              <img src={value.img} className='card-img-top rounded-2 'style={{width:'380px',height:'220px'}} alt="..."/>
                         </div>
-                        <div className='card-body' >
+                        <div className='card-body'style={{boxShadow:'1px 1px 5px 1px rgb(128,128,128,0.3)'}} >
                             <p className='fw-bold' style={{color:'#4A4A4A'}}>{value.title}</p>
                             <p style={{color:'#4A4A4A',fontFamily:'proxima',fontSize:'15px'}}>{value.dec}</p>
                             <p className='text-secondary' style={{fontSize:'13px'}}>{value.date}</p>
