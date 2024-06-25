@@ -15,6 +15,7 @@ import RealWedding from "./RealWedding";
 import Gallery from "./Gallery";
 import Featured from "./Featured";
 import Blog from "./Blog";
+import Footer1 from "./Footer1";
 const Home = () => {
   return (
     <div>
@@ -70,6 +71,7 @@ const Home = () => {
     <Featured />
     <Heading7 />
     <Blog />
+    <Footer1 />
     </div>
   );
 };

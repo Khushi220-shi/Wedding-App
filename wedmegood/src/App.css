@@ -15,7 +15,9 @@
   box-sizing: border-box;
   font-family: proxima;
 }
-
+ p{
+  margin-bottom: 3px !important;
+ }
 img{
   width: 100%;
 }
@@ -91,4 +93,60 @@ img{
 }
 .download:hover{
   background-color: #871744 !important;
+}
+/* src/VendorButton.css */
+.vendor-button {
+  background-color: white;
+  color: #3498DB !important;
+  padding: 10px 20px;
+  border: 2px solid #3498DB;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+ 
+}
+.vendor-button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #3498DB;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  transition: transform 0.3s ease-in-out;
+}
+.vendor-button::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #ffffff;
+  border-right: 20px solid transparent;
+  /* clip-path: polygon(0 100%, 100% 0, 100% 100%); */
+  transition: all 0.3s ease-in-out;
+}
+
+.vendor-button:hover {
+  background-color: #3498DB;
+  color: white !important;
+  box-shadow: inset 0 0 0 0 #3498DB;
+}
+
+
+.vendor-button:hover::before {
+  bottom: 0;
+  right: 0;
+  border-bottom-color: #3498DB;
+}
+.vendor-button:hover::after {
+  top: 0;
+  left: 0;
+  border-bottom-color: white;
+ 
 }
