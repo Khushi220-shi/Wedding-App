@@ -20,6 +20,10 @@
  }
 img{
   width: 100%;
+  
+}
+.city-menu{
+  margin-left: -200px !important;
 }
 .list li{
   cursor: pointer;
@@ -31,6 +35,7 @@ img{
   color: black;
   font-size: 16px;
 }
+
 .wedding-img{
  background-image: linear-gradient(to top ,black,transparent,transparent),url(./assets/home.webp);
   background-size: cover;
@@ -149,4 +154,83 @@ img{
   left: 0;
   border-bottom-color: white;
  
+}
+/* src/VendorButton.css */
+.vendor-button1 {
+  background-color: white;
+  color: #E72E77 !important;
+  padding: 10px 20px;
+  border: 2px solid #E72E77;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+ 
+}
+.vendor-button1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #E72E77;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  transition: transform 0.3s ease-in-out;
+}
+.vendor-button1::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #ffffff;
+  border-right: 20px solid transparent;
+  /* clip-path: polygon(0 100%, 100% 0, 100% 100%); */
+  transition: all 0.3s ease-in-out;
+}
+
+.vendor-button1:hover {
+  background-color: #E72E77;
+  color: white !important;
+  box-shadow: inset 0 0 0 0 #E72E77;
+}
+
+
+.vendor-button1:hover::before {
+  bottom: 0;
+  right: 0;
+  border-bottom-color: #E72E77;
+}
+.vendor-button1:hover::after {
+  top: 0;
+  left: 0;
+  border-bottom-color: white;
+ 
+}
+.type li{
+  color: #333;
+  font-size: 14px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.type li:hover{
+  font-size: 15px;
+  color: black;
+}
+.under:hover{
+  text-decoration: underline !important;
+  text-decoration-color: black;
+  text-underline-offset: 9px;
+}
+.venue-text{
+  color: #333;
+  cursor: pointer;
+}
+.venue-text:hover{
+  color: black;
+  font-weight: 600;
 }

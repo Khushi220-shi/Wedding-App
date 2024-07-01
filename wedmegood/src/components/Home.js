@@ -16,6 +16,7 @@ import Gallery from "./Gallery";
 import Featured from "./Featured";
 import Blog from "./Blog";
 import Footer1 from "./Footer1";
+import Copyright from './Copyright'
 const Home = () => {
   return (
     <div>
@@ -72,6 +73,7 @@ const Home = () => {
     <Heading7 />
     <Blog />
     <Footer1 />
+    <Copyright />
     </div>
   );
 };

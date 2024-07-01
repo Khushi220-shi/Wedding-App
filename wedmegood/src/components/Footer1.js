@@ -1,5 +1,9 @@
 import React from 'react'
 import VenderButton from './VenderButton'
+import Social from './Social'
+import Wedmegoos from './Wedmegoos'
+import Footer2 from './Footer2'
+
 
 const Footer1 = () => {
   return (
@@ -33,15 +37,31 @@ const Footer1 = () => {
                 <h6 className='mt-3' style={{fontSize:'15px', lineHeight:'25px'}}>Second Floor, Ocus Technopolis, Sector 54 Golf <br></br> Course Road, Gurgaon, Haryana, India, 122002</h6>
               </div>
               <div className='mt-5'>
-
+                  <h5 className='fw-bold'>Get Latest Blog Alerts</h5>
+                  <div className="input-group mb-3 mt-3 w-75">
+                    <input type="text" className="form-control rounded-0" placeholder="Email*" aria-describedby="button-addon2"/>
+                    <button className="btn text-light rounded-0" style={{backgroundColor:'#E72E77'}} type="button" id="button-addon2">Submit</button>
+                  </div>
+                  <VenderButton />
               </div>
             </div>
             <div>
               <h6 className='fw-bold'>Follow us on:</h6>
+              <Social />
             </div>
             <div>
               <h6 className='fw-bold'>Get The WedMeGood App</h6>
+              <Wedmegoos />
             </div>
+        </div>
+        <div className='mt-5'>
+          <hr />
+          <div>
+            <Footer2 />
+          </div>
+          <div>
+            
+          </div>
         </div>
       </div>
     </div>

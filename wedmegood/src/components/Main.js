@@ -22,7 +22,7 @@ const Main = () => {
             </div>
             <div className="dropdown">
               <button className="btn btn-light text-secondary rounded-0 p-3" style={{width:'400px'}} type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Select Vendor type <span><FaAngleDown style={{color:'#E72E77',marginLeft:"200px"}}/></span>
+                Select Cities <span><FaAngleDown style={{color:'#E72E77',marginLeft:"230px"}}/></span>
               </button>
               <ul className="dropdown-menu " style={{width:'300px'}}>
                 <li><a className="dropdown-item" href="#">Action</a></li>

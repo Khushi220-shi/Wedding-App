@@ -19,16 +19,16 @@ const Header = () => {
 
           </li>
         </ul> */}
-        <ul className="dropdown-menu dropdown-menu-left" style={{width:'700px'}} aria-labelledby="navbarDropdownMenuLink">
+        <ul className="dropdown-menu dropdown-menu city-menu" style={{width:'1000px',lineHeight:'30px',border:'none'}} aria-labelledby="navbarDropdownMenuLink">
           <li>
             <div className="input-group mt-2 mx-2">
-              <div className="form-outline" style={{width:'97%'}}>
+              <div className="form-outline ms-5 mb-4" style={{width:'85%'}}>
                 <input type="search" id="search-input-dropdown" className="form-control " placeholder='Search City and State....' />
               </div>
             </div>
           </li>
          <div className='d-flex justify-content-around'>
-         <div style={{padding:'15px'}}className='list'>
+         <div style={{padding:'20px'}}className='list'>
             <h6 style={{color:'#E72E77',fontWeight:'600',cursor:'none'}}>All Cities</h6>
             <li className=''>All cities</li>
             <li className=''>Delhi NCR</li>
@@ -41,7 +41,7 @@ const Header = () => {
             <li className=''>Hyderabad</li>
             <li className=''>Chennai</li>
           </div>
-          <div style={{padding:'15px'}}className='list'>
+          <div style={{padding:'20px'}}className='list'>
             <h6 style={{color:'#E72E77',fontWeight:'600',cursor:'none'}}>Popular Cities</h6>
             <li className=''>Gurgaon</li>
             <li className=''>Goa</li>
@@ -54,7 +54,7 @@ const Header = () => {
             <li className=''>Jodhpur</li>
             <li className=''>Kochi</li>
           </div>
-          <div style={{padding:'15px'}}className='list'>
+          <div style={{padding:'20px'}}className='list'>
             <h6 style={{color:'#E72E77',fontWeight:'600',cursor:'none'}}>Other Cities</h6>
             <li className=''>Nagpur</li>
             <li className=''>Dehradun</li>
@@ -67,7 +67,7 @@ const Header = () => {
             <li className=''>Ranchi</li>
             <li className=''>Mysore</li>
           </div>
-          <div style={{padding:'15px'}} className='list'>
+          <div style={{padding:'20px'}} className='list'>
             <h6 style={{color:'#E72E77',fontWeight:'600',cursor:'none'}}>State</h6>
             <li className=''>Kerala</li>
             <li className=''>Rajasthan</li>
