@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 import { IoSearch } from "react-icons/io5";
 import Login from "../page/Login";
 import Venues from "../page/Venues";
-import Vendors from "../page/Vendors";
+import Vendors from "../page/Vendors";  
 import {
   Photographers,
   photo,
@@ -20,8 +20,12 @@ import {
   music,
   Vendor,
 } from "../data";
+import { useNavigate } from "react-router-dom";
+
+
 
 const Header1 = () => {
+  const Navigate = useNavigate();
   return (
     <div>
       <div
@@ -140,7 +144,7 @@ const Header1 = () => {
             <button
               className="btn rounded-pill px-5 text-light"
               style={{ backgroundColor: "#B4245D", cursor: "pointer" }}
-            >
+              onClick={(e)=>{ e.preventDefault(); Navigate('/Registration')}}>
               Log in
             </button>
           </div>

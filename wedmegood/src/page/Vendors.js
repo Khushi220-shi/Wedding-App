@@ -1,23 +1,23 @@
-import React from 'react'
+import React from "react";
 
-const Photographers = ({title,sub}) => {
+const Photographers = ({ title, sub }) => {
   return (
     <div>
-
       <div>
-         
-          <div className='type'>
-          <h6 className='fw-bold mt-3' style={{color:'#E72E77'}}>{title}</h6>
-             
-             {
-              sub?.map((val)=>{
-                return (
-                  <li><a>{val}</a></li>
-                )
-              })
-             }
-          </div>
-          {/* <div className='type'>
+        <div className="type">
+          <h6 className="fw-bold mt-3" style={{ color: "#E72E77" }}>
+            {title}
+          </h6>
+
+          {sub?.map((val) => {
+            return (
+              <li>
+                <a>{val}</a>
+              </li>
+            );
+          })}
+        </div>
+        {/* <div className='type'>
            <div className=''>
             <h6 className='fw-bold ' style={{color:'#E72E77'}}>{title2}</h6>
               <li><a>{text2}</a></li>
@@ -88,7 +88,7 @@ const Photographers = ({title,sub}) => {
           </div> */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Photographers
+export default Photographers;
