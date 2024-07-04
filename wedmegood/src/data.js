@@ -615,7 +615,7 @@ export const maker = [
     text: "Invitation Video Templates",
   },
 ];
-export const Vendor = [
+export const Vendor1 = [
   {
     title: "Photographers",
     sub: ["Photographers"],
@@ -631,7 +631,9 @@ export const Vendor = [
   {
     title: "Planning & Decor",
     sub: ["Wedding Planners", "Decorators"],
-  },
+  }
+];
+export const Vendor2 = [
   {
     title: "Bridal Wear",
     sub: [
@@ -655,7 +657,9 @@ export const Vendor = [
   {
     title: "Mehndi",
     sub:["Mehendi Artist"]
-  },
+  }
+]
+export const Vendor3 =[
   {
     title: "Jewellery & Accessories",
     sub:["Jewellery","Flower Jewellery","Bridal Jewellery On Rent","Accessories", "View All Jewellery & Accessoiries",]
@@ -668,6 +672,8 @@ export const Vendor = [
     title: "Music & Dance",
     sub:["DJs","Sangeet Choreographer", "Wedding Entertainment",]
   },
+]
+export const Vendor4 =[
   {
     title: "Food",
     sub:["Catering Services","Cake","Chaat & Food Stalls","Bartenders", "View All Food"]
@@ -680,7 +686,7 @@ export const Vendor = [
     title: "Bridal Grooming",
     sub:["Beauty and Wellness"]
   }
-];
+]
 
 
 

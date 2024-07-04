@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../App.css";
 import "../components/header.css";
 import logo from "../assets/logo.png";
@@ -19,13 +19,19 @@ import {
   invite,
   music,
   Vendor,
+  Vendor1,
+  Vendor2,
+  Vendor3,
+  Vendor4,
 } from "../data";
 import { useNavigate } from "react-router-dom";
-
+import AuthContext from '../page/AuthContext';
+import { Link } from 'react-router-dom';
 
 
 const Header1 = () => {
   const Navigate = useNavigate();
+  const { isAuthenticated, logout } = useContext(AuthContext);
   return (
     <div>
       <div
@@ -67,11 +73,32 @@ const Header1 = () => {
                     Vendors
                   </a>
                   <div className="dropdown-menu" style={{ padding: "25px" }}>
-                    <div className="d-flex">
+                    <div className="d-flex justify-content-around">
                      <div>
-                          {Vendor.map((value) => {
+                          {Vendor1.map((value) => {
                             return (
-                              <Vendors title={value.title} sub={value.sub} />
+                              <Vendors title1={value.title} sub1={value.sub} />
+                            );
+                          })}
+                        </div>
+                        <div>
+                          {Vendor2.map((value) => {
+                            return (
+                              <Vendors title2={value.title} sub2={value.sub} />
+                            );
+                          })}
+                        </div>
+                        <div>
+                          {Vendor3.map((value) => {
+                            return (
+                              <Vendors title3={value.title} sub3={value.sub} />
+                            );
+                          })}
+                        </div>
+                        <div>
+                          {Vendor4.map((value) => {
+                            return (
+                              <Vendors title4={value.title} sub4={value.sub} />
                             );
                           })}
                         </div>
@@ -141,12 +168,33 @@ const Header1 = () => {
               }}
               className="rounded-5 p-1"
             />
-            <button
+            {/* <button
               className="btn rounded-pill px-5 text-light"
               style={{ backgroundColor: "#B4245D", cursor: "pointer" }}
-              onClick={(e)=>{ e.preventDefault(); Navigate('/Registration')}}>
+              onClick={(e)=>{ e.preventDefault(); Navigate('/Login')}}>
+              Log in
+            </button> */}
+            {isAuthenticated ? (
+            <li style={{listStyleType:'none'}}>
+              {/* <button onClick={logout}>Logout</button> */}
+              <button
+              className="btn rounded-pill px-5 text-light"
+              style={{ backgroundColor: "#B4245D", cursor: "pointer" }}
+              onClick={logout}>
+              LogOut
+            </button>
+            </li>
+          ) : (
+            <li style={{listStyleType:'none'}}>
+              {/* <Link to="/login">Login</Link> */}
+              <button
+              className="btn rounded-pill px-5 text-light"
+              style={{ backgroundColor: "#B4245D", cursor: "pointer" }}
+              onClick={(e)=>{ e.preventDefault(); Navigate('/Login')}}>
               Log in
             </button>
+            </li>
+          )}
           </div>
         </div>
       </div>

@@ -1,128 +1,226 @@
 import React from "react";
-import { Formik } from "formik";
-const Login = () => {
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import { FaUserAlt } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { FaKey } from "react-icons/fa";
+import register from "../assets/register.avif";
+import * as Yup from "yup";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const registerSchema = Yup.object().shape({
+  user: Yup.string().required("This field is required!"),
+  email: Yup.string().email("Invalid Email").required("This field is required"),
+  password: Yup.string()
+    .required("This field is required")
+    .min(6, "Must be at least 6 characters"),
+  confirmPassword: Yup.string()
+    .required("This field is required")
+    .min(6, "Must be at least 6 characters long")
+    .oneOf([Yup.ref("password")], "Passwords must match"),
+  remember: Yup.boolean().oneOf([true], "This field is required"),
+});
+
+const Registration = () => {
+  const navigate = useNavigate();
+
+  const notify = () =>
+    toast.success("Register Successful", {
+      position: 'top-center'
+    });
+
   return (
     <div>
-      <div className="wrapper">
-        <h1>Registration Form</h1>
-        <div className="main">
-          <div className="form-container">
-            <Formik initialValues={{
-                fname:'',
-                lname:'',
-                email:'',
-                phone:'',
-                password:''
-            }}
-            
-            validate={(values)=>{
-                const errors ={};
-                if(!values.fname){
-                    errors.fname='required!'
-                }
-                if(!values.lname){
-                    errors.lname="Required!"
-                }
-                if(!values.email){
-                    errors.email='required!'
-                }
-                else if(!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)){
-                    errors.email="this must a valid email";
-                }
-                if(!values.password){
-                    errors.password="required"
-                }
-                if(!values.phone){
-                    errors.phone="required"
-                }
-                else if(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/i.test(values.phone)){
-                    errors.phone="only number must be define"
-                }
-                return errors;
-            }}
-                onSubmit={(values)=>{
-                    console.log(values);
-                }}
-                
-            >
-            
-                {(formik)=>(
-              <form
-             
-                className="form-group"
-                autoComplete="off"
-                onSubmit={formik.handleSubmit}
-              >
-                 {console.log(formik.errors)}
-                <label>Fname</label>
-                <input
-                  type="text"
-                  name="fname"
-                  className="form-control "
-                  
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.fname}
-                ></input>
-                <span className="text-danger">{formik.errors.fname} </span>
-                <br></br>
-                <label>Lname</label>
-                <input
-                  type="text"
-                  name="lname"
-                  className="form-control "
-                  
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.lname}
-                ></input>
-                 <span className="text-danger">{formik.errors.lname} </span>
-                <br></br>
-                <label>Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  className="form-control "
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.email}
-                ></input>
-                <span className="text-danger">{formik.errors.email} </span>
-                <br></br>
-                <label>Phone No.</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  className="form-control "
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.phone}
-                ></input>
-                 <span className="text-danger">{formik.errors.phone} </span>
-                <br></br>
-                <label>Password</label>
-                <input
-                  type="password"
-                  name="password"
-                  className="form-control"
-                  
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.password}
-                ></input>
-                <span className="text-danger">{formik.errors.password} </span>
-                <br></br>
-                <button type="submit" className="btn btn-success btn-md">
-                  Submit
-                </button>
-              </form>
-              )}
-            </Formik>
+      <ToastContainer />
+      <section className="vh-100" style={{ backgroundColor: "#eee" }}>
+        <div className="container h-100">
+          <div className="row d-flex justify-content-center align-items-center h-100">
+            <div className="col-lg-12 col-xl-11">
+              <div className="card text-black" style={{ borderRadius: "25px" }}>
+                <div className="card-body p-md-5">
+                  <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 ">
+                    Registration Form
+                  </p>
+                  <div className="row justify-content-center">
+                    <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                      <Formik
+                        initialValues={{
+                          user: '',
+                          email: '',
+                          password: '',
+                          confirmPassword: '',
+                          remember: false,
+                        }}
+                        validationSchema={registerSchema}
+                        onSubmit={(values, { resetForm }) => {
+                          // Store the registration data in local storage
+                          localStorage.setItem("userData", JSON.stringify(values));
+                          notify(); // Show success toast
+                          resetForm(); // Reset form fields
+                          navigate('/login'); // Redirect to login page
+                        }}
+                      >
+                        {({ handleSubmit, handleChange, handleBlur, values }) => (
+                          <Form className="mx-1 mx-md-4" onSubmit={handleSubmit}>
+                            <div className="d-flex flex-row align-items-center mb-4">
+                              <FaUserAlt className="me-3" />
+                              <div className="form-outline flex-fill mb-0">
+                                <Box
+                                  component="div"
+                                  sx={{
+                                    "& > :not(style)": { m: 1, width: "30ch" },
+                                  }}
+                                  noValidate
+                                  autoComplete="off"
+                                >
+                                  <TextField
+                                    id="outlined-basic"
+                                    name="user"
+                                    placeholder="Enter User Name"
+                                    label={<FaUserAlt style={{ color: "#E72E77" }} />}
+                                    variant="outlined"
+                                    value={values.user}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                  />
+                                  <ErrorMessage name="user" className="text-danger" component="div" />
+                                </Box>
+                              </div>
+                            </div>
+
+                            <div className="d-flex flex-row align-items-center mb-4">
+                              <IoIosMail className="me-3" />
+                              <div className="form-outline flex-fill mb-0">
+                                <Box
+                                  component="div"
+                                  sx={{
+                                    "& > :not(style)": { m: 1, width: "30ch" },
+                                  }}
+                                  noValidate
+                                  autoComplete="off"
+                                >
+                                  <TextField
+                                    id="outlined-basic"
+                                    name="email"
+                                    placeholder="Enter Email Id"
+                                    label={<IoIosMail style={{ color: "#E72E77" }} />}
+                                    variant="outlined"
+                                    value={values.email}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                  />
+                                  <ErrorMessage name="email" className="text-danger" component="div" />
+                                </Box>
+                              </div>
+                            </div>
+
+                            <div className="d-flex flex-row align-items-center mb-4">
+                              <RiLockPasswordFill className="me-3" />
+                              <div className="form-outline flex-fill mb-0">
+                                <Box
+                                  component="div"
+                                  sx={{
+                                    "& > :not(style)": { m: 1, width: "30ch" },
+                                  }}
+                                  noValidate
+                                  autoComplete="off"
+                                >
+                                  <TextField
+                                    id="outlined-basic"
+                                    name="password"
+                                    type="password"
+                                    placeholder="Enter Password"
+                                    label={<RiLockPasswordFill style={{ color: "#E72E77" }} />}
+                                    variant="outlined"
+                                    value={values.password}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                  />
+                                  <ErrorMessage name="password" className="text-danger" component="div" />
+                                </Box>
+                              </div>
+                            </div>
+
+                            <div className="d-flex flex-row align-items-center mb-4">
+                              <FaKey className="me-3" />
+                              <div className="form-outline flex-fill mb-0">
+                                <Box
+                                  component="div"
+                                  sx={{
+                                    "& > :not(style)": { m: 1, width: "30ch" },
+                                  }}
+                                  noValidate
+                                  autoComplete="off"
+                                >
+                                  <TextField
+                                    id="outlined-basic"
+                                    name="confirmPassword"
+                                    type="password"
+                                    placeholder="Enter Repeat Password"
+                                    label={<FaKey style={{ color: "#E72E77" }} />}
+                                    variant="outlined"
+                                    value={values.confirmPassword}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                  />
+                                  <ErrorMessage name="confirmPassword" className="text-danger" component="div" />
+                                </Box>
+                              </div>
+                            </div>
+
+                            <div className="form-check d-flex justify-content-center mb-5">
+                              <Field
+                                className="form-check-input me-2"
+                                type="checkbox"
+                                name='remember'
+                                id="form2Example3c"
+                              />
+                              <label
+                                className="form-check-label"
+                                htmlFor="form2Example3"
+                              >
+                                I agree all statements in{" "}
+                                <Link to="#!" style={{ color: "#E72E77" }}>
+                                  Terms of service
+                                </Link>
+                              </label>
+                              <ErrorMessage name="remember" className="text-danger ms-2" component="div" />
+                            </div>
+
+                            <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                              <button
+                                type="submit"
+                                className="btn text-light btn-lg"
+                                style={{ backgroundColor: "#E72E77" }}
+                              >
+                                Register
+                              </button>
+                            </div>
+                          </Form>
+                        )}
+                      </Formik>
+                    </div>
+                    <div className="col-md-10 col-lg-6 col-xl-7 order-1 order-lg-2">
+                      <img
+                        src={register}
+                        className="img-fluid rounded-2"
+                        alt="Sample image"
+                        style={{ height: "650px" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
 
-export default Login;
+export default Registration;
