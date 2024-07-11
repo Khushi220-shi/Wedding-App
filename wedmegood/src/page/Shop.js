@@ -1,6 +1,21 @@
 import React from "react";
-
-const Photographers = ({ title1, sub1,title2, sub2,title3, sub3,title4, sub4, }) => {
+import '../App.css'
+const Shop = ({
+  title1,
+  sub1,
+  dark,
+  title2,
+  sub2,
+  title3,
+  sub3,
+  dark1,
+  dark2,
+  title4,
+  img2,
+  img1,
+  text,
+  text1,
+}) => {
   return (
     <div>
       <div className="">
@@ -16,6 +31,14 @@ const Photographers = ({ title1, sub1,title2, sub2,title3, sub3,title4, sub4, })
               </li>
             );
           })}
+          <li className="under">
+            <a
+              className="fw-bold  "
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              {dark}
+            </a>
+          </li>
         </div>
         <div className="type">
           <h6 className="fw-bold mt-3" style={{ color: "#E72E77" }}>
@@ -29,6 +52,14 @@ const Photographers = ({ title1, sub1,title2, sub2,title3, sub3,title4, sub4, })
               </li>
             );
           })}
+          <li className="under">
+            <a
+              className="fw-bold  "
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              {dark1}
+            </a>
+          </li>
         </div>
         <div className="type">
           <h6 className="fw-bold mt-3" style={{ color: "#E72E77" }}>
@@ -42,23 +73,18 @@ const Photographers = ({ title1, sub1,title2, sub2,title3, sub3,title4, sub4, })
               </li>
             );
           })}
+          <li className="under">
+            <a className="fw-bold "
+              style={{ textDecoration: "none", color: "black" }}>
+              {dark2}
+            </a>
+          </li>
         </div>
-        <div className="type">
-          <h6 className="fw-bold mt-3" style={{ color: "#E72E77" }}>
-            {title4}
-          </h6>
-
-          {sub4?.map((val) => {
-            return (
-              <li>
-                <a>{val}</a>
-              </li>
-            );
-          })}
-        </div>
+        
+        
       </div>
     </div>
   );
 };
 
-export default Photographers;
+export default Shop;

@@ -9,8 +9,7 @@ import register from "../assets/register.avif";
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Link, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 
 const registerSchema = Yup.object().shape({
   user: Yup.string().required("This field is required!"),
@@ -28,14 +27,15 @@ const registerSchema = Yup.object().shape({
 const Registration = () => {
   const navigate = useNavigate();
 
-  const notify = () =>
+  const notify = () => {
+    console.log("Notify function called"); // Debug log
     toast.success("Register Successful", {
-      position: 'top-center'
+      position: "top-center",
     });
+  };
 
   return (
     <div>
-      <ToastContainer />
       <section className="vh-100" style={{ backgroundColor: "#eee" }}>
         <div className="container h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
@@ -49,23 +49,35 @@ const Registration = () => {
                     <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                       <Formik
                         initialValues={{
-                          user: '',
-                          email: '',
-                          password: '',
-                          confirmPassword: '',
-                          remember: false,
+                          user: "",
+                          email: "",
+                          password: "",
+                          confirmPassword: "",
+                          remember: false
                         }}
                         validationSchema={registerSchema}
                         onSubmit={(values, { resetForm }) => {
-                          // Store the registration data in local storage
-                          localStorage.setItem("userData", JSON.stringify(values));
+                          console.log("Form submitted"); // Debug log
+                          localStorage.setItem(
+                            "userData",
+                            JSON.stringify(values)
+                          );
+                          // localStorage.setItem("userName", values.user);
                           notify(); // Show success toast
                           resetForm(); // Reset form fields
-                          navigate('/login'); // Redirect to login page
+                          navigate("/login"); // Redirect to login page
                         }}
                       >
-                        {({ handleSubmit, handleChange, handleBlur, values }) => (
-                          <Form className="mx-1 mx-md-4" onSubmit={handleSubmit}>
+                        {({
+                          handleSubmit,
+                          handleChange,
+                          handleBlur,
+                          values,
+                        }) => (
+                          <Form
+                            className="mx-1 mx-md-4"
+                            onSubmit={handleSubmit}
+                          >
                             <div className="d-flex flex-row align-items-center mb-4">
                               <FaUserAlt className="me-3" />
                               <div className="form-outline flex-fill mb-0">
@@ -81,13 +93,19 @@ const Registration = () => {
                                     id="outlined-basic"
                                     name="user"
                                     placeholder="Enter User Name"
-                                    label={<FaUserAlt style={{ color: "#E72E77" }} />}
+                                    label={
+                                      <FaUserAlt style={{ color: "#E72E77" }} />
+                                    }
                                     variant="outlined"
                                     value={values.user}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                   />
-                                  <ErrorMessage name="user" className="text-danger" component="div" />
+                                  <ErrorMessage
+                                    name="user"
+                                    className="text-danger"
+                                    component="div"
+                                  />
                                 </Box>
                               </div>
                             </div>
@@ -107,13 +125,19 @@ const Registration = () => {
                                     id="outlined-basic"
                                     name="email"
                                     placeholder="Enter Email Id"
-                                    label={<IoIosMail style={{ color: "#E72E77" }} />}
+                                    label={
+                                      <IoIosMail style={{ color: "#E72E77" }} />
+                                    }
                                     variant="outlined"
                                     value={values.email}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                   />
-                                  <ErrorMessage name="email" className="text-danger" component="div" />
+                                  <ErrorMessage
+                                    name="email"
+                                    className="text-danger"
+                                    component="div"
+                                  />
                                 </Box>
                               </div>
                             </div>
@@ -134,13 +158,21 @@ const Registration = () => {
                                     name="password"
                                     type="password"
                                     placeholder="Enter Password"
-                                    label={<RiLockPasswordFill style={{ color: "#E72E77" }} />}
+                                    label={
+                                      <RiLockPasswordFill
+                                        style={{ color: "#E72E77" }}
+                                      />
+                                    }
                                     variant="outlined"
                                     value={values.password}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                   />
-                                  <ErrorMessage name="password" className="text-danger" component="div" />
+                                  <ErrorMessage
+                                    name="password"
+                                    className="text-danger"
+                                    component="div"
+                                  />
                                 </Box>
                               </div>
                             </div>
@@ -161,13 +193,19 @@ const Registration = () => {
                                     name="confirmPassword"
                                     type="password"
                                     placeholder="Enter Repeat Password"
-                                    label={<FaKey style={{ color: "#E72E77" }} />}
+                                    label={
+                                      <FaKey style={{ color: "#E72E77" }} />
+                                    }
                                     variant="outlined"
                                     value={values.confirmPassword}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                   />
-                                  <ErrorMessage name="confirmPassword" className="text-danger" component="div" />
+                                  <ErrorMessage
+                                    name="confirmPassword"
+                                    className="text-danger"
+                                    component="div"
+                                  />
                                 </Box>
                               </div>
                             </div>
@@ -176,7 +214,7 @@ const Registration = () => {
                               <Field
                                 className="form-check-input me-2"
                                 type="checkbox"
-                                name='remember'
+                                name="remember"
                                 id="form2Example3c"
                               />
                               <label
@@ -188,7 +226,11 @@ const Registration = () => {
                                   Terms of service
                                 </Link>
                               </label>
-                              <ErrorMessage name="remember" className="text-danger ms-2" component="div" />
+                              <ErrorMessage
+                                name="remember"
+                                className="text-danger ms-2"
+                                component="div"
+                              />
                             </div>
 
                             <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
@@ -200,6 +242,15 @@ const Registration = () => {
                                 Register
                               </button>
                             </div>
+                            
+                              <div >
+                                <p className="small fw-bold mt-2 pt-1 mb-0">
+                                  Already Have an Account !{" "}
+                                  <Link to="/Login" className="link-danger">
+                                    Login
+                                  </Link>
+                                </p>
+                              </div>
                           </Form>
                         )}
                       </Formik>

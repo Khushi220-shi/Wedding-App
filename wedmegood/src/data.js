@@ -687,7 +687,133 @@ export const Vendor4 =[
     sub:["Beauty and Wellness"]
   }
 ]
-
-
-
-
+export const photo1 =[
+  {
+    title:'Outfit',
+    sub:['Bridal Lehanga','Wedding Sarress','Engagement','Mehandi','Blouse Design'],
+    dark:'More',
+  },
+  {
+    title:'Jewellery & Accesssories',
+    sub:['Bridal Jewellery','Engagement Rings','Floral Jewellery'],
+    dark:'More'
+  },
+  {
+    title:'Mehandi',
+    sub:['Arabic','Mehandi Designs','Simple','Unique'],
+    dark:'More'
+  }
+]
+export const photo2 = [
+  {
+    title:'Decor & Ideas',
+    sub:['Wedding Decor','Bridal Entry','Groom Entry','Wedding Games'],
+    dark:'More'
+  },
+  {
+    title:'Wedding Card Designs',
+    sub:['Designs','Wedding Gifts','Wedding Invitations'],
+    dark:'More'
+  },
+  {
+    title:'Wedding Photography',
+    sub:['Pre Wedding Shoot','Wedding','Wedding Photoshoor & Poses'],
+    dark:'More'
+  }
+]
+export const photo3 =[
+  {
+    title:'Groom Wear',
+    sub:['Sherwani for Groom','Wedding Suits for Groom'],
+    dark:'More'
+  },
+  {
+    title:'Bridal Makeup & Hair',
+    sub:['Bridal Makeup','Bridal Hairstyle','Engagement','Mehndi'],
+    dark:'More'
+  }
+]
+export const real=[
+  {
+    title:'By City',
+    sub:['Mumbai','Bangalore','Pune','Kolkata','Jaipur'],
+    dark:'Other'
+  }
+]
+export const real1=[
+  {
+    title:'By Culture',
+    sub:['Mharashtrain','Punjabi /Sikh','Bengali','Gujarati','Marwadi','Telugu'],
+    dark:'Other'
+  }
+]
+export const real2=[
+  {
+    title:'By Theme',
+    sub:['Destination','Grand & Luxurious','Pocket Friendly Stunners','Intimate & Minimalist','Modern & Stylish','International'],
+    dark:'Other'
+  }
+]
+export const real3=[
+  {
+    title:'Latest Real Wedding',
+    img:'./images/header/real1.webp',
+    text:'Alisha and Lakshay (Chandigarh)',
+    img1:'./images/header/real2.webp',
+    text1:'Vineeth and Bhavya (Hyderabad)'
+  }
+]
+export const blog1=[
+  {
+    title:'Browser by Category',
+    sub:['Bridal Makeup','Honeymoon Travel','Wedding Songs and Video','Bridal Hairstyles','Wedding Decor Ideas','Bridal Style Advice ','Wedding Gifts and Favors','Budget Weddings'],
+    dark:'More'
+  }
+]
+export const blog2=[
+  {
+    title:'Popular Sections',
+    sub:['South Indian Wedding','Real Brides Reveal','Bridal Guys','Real Wedding','Mehendi Ideas','Indian Wedding Ideas']
+  }
+]
+export const blog3=[
+  {
+    title:'Most Searched Blogs',
+    sub:['Wedding Songs','Best Bridal Entry Songs','Chandni Chowk Lehengas','Best Groom Entry Songs','Bridal Mehendi Designs','Witties Wedding Hashtags','Best Bridal Hairstyles','Latest Sabyasachi Lehengas','Bridal Blouse Designs','2025 Marriage Dates']
+  }
+]
+export const blog4=[
+  {
+    title:'Top Blogs',
+    img:'./images/header/blog1.webp',
+    text:'Bridal Mehendi Designs',
+    img1:'./images/header/blog2.webp',
+    text1:'Honeymoon Hotels'
+  }
+]
+export const shop1=[
+  {
+    title:'By Type',
+    sub:['Bridal Lehengaa','Lehenga','Sarees','Gowns','Sharara','Anarkali','Drape Sarees','Indo Western'],
+    dark:' View More'
+  }
+]
+export const shop2=[
+  {
+    title:'By Occassion',
+    sub:['Engagement','Haldi','Mehendi','Cocktail','Wedding','Reception','Sangeet']
+  }
+]
+export const shop3=[
+  {
+    title:'Most Popular',
+    sub:['Engagement Lehenga','Cocktail Gowns','Reception Lehenga','Wedding Sarees','Lehenga Drape Sarees','Silk Sarees','Banarasi Lehenga','Red Bridal Lehenga'],
+    dark:'View More'
+  }
+]
+export const invitation=[
+  {
+    title:'Wedding Invitation Maker',
+    sub:['Wedding Card Designs','Invitation Video Templates','Save the Date Templates']
+  }
+]

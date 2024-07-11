@@ -10,6 +10,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AuthContext from '../page/AuthContext';
+import Registration from './Registration';
 
 const loginSchema = Yup.object().shape({
   email: Yup.string().email('Invalid Email').required('This field is required'),
@@ -56,7 +57,7 @@ const Login = () => {
                     notify();
                     navigate('/');
                   } else {
-                    notifyError("Invalid email or password");
+                    notifyError("Please  Registration !");
                   }
                 }}
               >

@@ -224,7 +224,7 @@ img{
 .under:hover{
   text-decoration: underline !important;
   text-decoration-color: black;
-  text-underline-offset: 9px;
+  text-underline-offset: 8px;
 }
 .venue-text{
   color: #333;
@@ -251,4 +251,8 @@ height: 100%;
 }
 .text-body:hover{
   color: blue !important;
+}
+.header-img{
+  width: 200px;
+ border-radius: 10px;
 }
