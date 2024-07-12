@@ -7,7 +7,7 @@ import Login from "../page/Login";
 import Venues from "../page/Venues";
 import Vendors from "../page/Vendors";
 import { FaCircleUser } from "react-icons/fa6";
-import Blog from '../page/Blog'
+import Blog from '../page/Blog';
 import Shop from "../page/Shop";
 import Invitation from "../page/Invitation";
 import {
@@ -44,15 +44,15 @@ import {
   invitation,
 } from "../data";
 import { useNavigate } from "react-router-dom";
-import AuthContext from "../page/AuthContext";
+import {AuthContext, AuthProvider} from "../page/AuthContext";
 import { Link } from "react-router-dom";
 import Photo from "../page/Photo";
 import RealWedding from "../page/RealWedding";
 
-
 const Header1 = () => {
   const Navigate = useNavigate();
-  const { isAuthenticated, logout } = useContext(AuthContext);
+  const { isAuthenticated, logout, username } = useContext(AuthContext);
+  console.log("user name",username);
   return (
     <div>
       <div
@@ -381,7 +381,7 @@ const Header1 = () => {
             </button> */}
             {isAuthenticated ? (
               <li style={{ listStyleType: "none" }}>
-                {/* <button on  Click={logout}>Logout</button> */}
+                {/* <button onClick={logout}>Logout</button> */}
                 {/* <button
                   className="btn rounded-pill px-5 text-light"
                   style={{ backgroundColor: "#B4245D", cursor: "pointer" }}
@@ -394,7 +394,7 @@ const Header1 = () => {
                     className="btn border-0 text-light "
                     style={{
                       color: "white",
-                      fontSize:'30px',
+                      fontSize: '30px',
                       cursor: "pointer",
                     }}
                     type="button"
@@ -402,14 +402,8 @@ const Header1 = () => {
                     aria-expanded="false"
                   >
                     <FaCircleUser/>
-                    
                   </button>
                   <ul className="dropdown-menu mt-4 rounded-0">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        user name
-                      </a>
-                    </li>
                     <li>
                       <a className="dropdown-item" href="#">
                         Join A Wedding 

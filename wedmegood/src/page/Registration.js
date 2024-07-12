@@ -1,15 +1,14 @@
 import React from "react";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
+import { Link, useNavigate } from "react-router-dom";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
+import { toast } from "react-toastify";
+import { Box, TextField } from "@mui/material";
 import { FaUserAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { FaKey } from "react-icons/fa";
-import register from "../assets/register.avif";
-import * as Yup from "yup";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import register from '../assets/register.avif'
 
 const registerSchema = Yup.object().shape({
   user: Yup.string().required("This field is required!"),
@@ -28,10 +27,16 @@ const Registration = () => {
   const navigate = useNavigate();
 
   const notify = () => {
-    console.log("Notify function called"); // Debug log
     toast.success("Register Successful", {
       position: "top-center",
     });
+  };
+
+  const handleRegistration = (values, { resetForm }) => {
+    localStorage.setItem("username", values.user); // Store username in localStorage
+    notify(); // Show success toast
+    resetForm(); // Reset form fields
+    navigate("/login"); // Redirect to login page
   };
 
   return (
@@ -56,17 +61,7 @@ const Registration = () => {
                           remember: false
                         }}
                         validationSchema={registerSchema}
-                        onSubmit={(values, { resetForm }) => {
-                          console.log("Form submitted"); // Debug log
-                          localStorage.setItem(
-                            "userData",
-                            JSON.stringify(values)
-                          );
-                          // localStorage.setItem("userName", values.user);
-                          notify(); // Show success toast
-                          resetForm(); // Reset form fields
-                          navigate("/login"); // Redirect to login page
-                        }}
+                        onSubmit={handleRegistration}
                       >
                         {({
                           handleSubmit,
@@ -79,7 +74,6 @@ const Registration = () => {
                             onSubmit={handleSubmit}
                           >
                             <div className="d-flex flex-row align-items-center mb-4">
-                              <FaUserAlt className="me-3" />
                               <div className="form-outline flex-fill mb-0">
                                 <Box
                                   component="div"
@@ -111,7 +105,6 @@ const Registration = () => {
                             </div>
 
                             <div className="d-flex flex-row align-items-center mb-4">
-                              <IoIosMail className="me-3" />
                               <div className="form-outline flex-fill mb-0">
                                 <Box
                                   component="div"
@@ -143,7 +136,6 @@ const Registration = () => {
                             </div>
 
                             <div className="d-flex flex-row align-items-center mb-4">
-                              <RiLockPasswordFill className="me-3" />
                               <div className="form-outline flex-fill mb-0">
                                 <Box
                                   component="div"
@@ -178,7 +170,6 @@ const Registration = () => {
                             </div>
 
                             <div className="d-flex flex-row align-items-center mb-4">
-                              <FaKey className="me-3" />
                               <div className="form-outline flex-fill mb-0">
                                 <Box
                                   component="div"

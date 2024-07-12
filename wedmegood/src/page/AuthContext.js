@@ -1,23 +1,38 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from "react";
 
 const AuthContext = createContext();
 
-export const AuthProvider = ({ children }) => {
+const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [username, setUsername] = useState("");
 
-  const login = () => {
+  useEffect(() => {
+    const savedUsername = localStorage.getItem("username");
+    if (savedUsername) {
+      setIsAuthenticated(true);
+      setUsername(savedUsername);
+    }
+  }, []);
+
+  const login = (user) => {
     setIsAuthenticated(true);
+    setUsername(user);
+    localStorage.setItem("username", user);
+    console.log('User logged in:', user); // Debugging log
   };
 
   const logout = () => {
     setIsAuthenticated(false);
+    setUsername("");
+    localStorage.removeItem("username");
+    console.log('User logged out'); // Debugging log
   };
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
+    <AuthContext.Provider value={{ isAuthenticated, username, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
 };
 
-export default AuthContext;
+export { AuthProvider, AuthContext };
