@@ -1,6 +1,8 @@
 import React from 'react'
 import '../App.css'
 import { FaAngleDown } from "react-icons/fa";
+import { Country, State, City }  from 'country-state-city';
+console.log(City.getAllCities())
 const Main = () => {
   return (
     <div>

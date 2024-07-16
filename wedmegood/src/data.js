@@ -817,3 +817,46 @@ export const invitation=[
     sub:['Wedding Card Designs','Invitation Video Templates','Save the Date Templates']
   }
 ]
+export const city=[
+  {
+    img:'./images/city/delhi.webp',
+    text:'Delhi NCR'
+  },
+  {
+    img:'./images/city/mumbai.webp',
+    text:'Mumbai'
+  },
+  {
+    img:'./images/city/banglore.webp',
+    text:'Bengalore'
+  },
+  {
+    img:'./images/city/hyderabad.webp',
+    text:'Hyderabad'
+  },
+  {
+    img:'./images/city/chennai.webp',
+    text:'Chennai'
+  },
+  {
+    img:'./images/city/goa.webp',
+    text:'Goa'
+  },
+  {
+    img:'./images/city/jaipur.webp',
+    text:'Jaipur'
+  },
+  {
+    img:'./images/city/pune.webp',
+    text:'Pune'
+  },
+  {
+    img:'./images/city/kolkata.webp',
+    text:'Kolkata'
+  },
+  {
+    img:'./images/city/lucknow.webp',
+    text:'Lucknow'
+  },
+
+]

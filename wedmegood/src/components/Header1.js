@@ -81,9 +81,12 @@ const Header1 = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav gap-3 ">
                 <li className="nav-item dropdown  dropdown1">
-                  <a className="nav-link text-light" href="#">
+                  <Link className="nav-link text-light"  onClick={(e) => {
+                    e.preventDefault();
+                    Navigate("/main");
+                  }} >
                     Venues
-                  </a>
+                  </Link>
 
                   <div className="dropdown-menu" style={{ padding: "25px" }}>
                     <Venues />
@@ -404,36 +407,19 @@ const Header1 = () => {
                     <FaCircleUser/>
                   </button>
                   <ul className="dropdown-menu mt-4 rounded-0">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Join A Wedding 
-                      </a>
-                    </li>
+                    
                     <li>
                       <a className="dropdown-item" href="#">
                         Setup Your Wedding
                       </a>
                     </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Inbox
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                       Bookings
-                      </a>
-                    </li>
+                   
                     <li>
                       <a className="dropdown-item" href="#">
                         Settings
                       </a>
                     </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                       Download App
-                      </a>
-                    </li>
+                  
                     <li>
                       <a className="dropdown-item"  onClick={logout} href="#">
                       Logout
