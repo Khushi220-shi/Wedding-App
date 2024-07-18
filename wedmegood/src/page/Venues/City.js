@@ -13,7 +13,7 @@ const City = () => {
                                 <img src={value.img} className='rounded-circle' style={{width:'80px',height:'80px'}}></img>
                             </div>
                             <div>
-                                <p className='text-center mt-2'>{value.text}</p>
+                                <p className='text-center mt-2 ' style={{fontSize:'14px'}}>{value.text}</p>
                             </div>
                         </div>
                     </>

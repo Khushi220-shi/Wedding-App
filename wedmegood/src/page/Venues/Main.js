@@ -2,6 +2,7 @@ import Breadcrump from '../Venues/Breadcrump'
 import React from 'react'
 import Header from './Header'
 import City  from './City'
+import MainCard from './Card/MainCard'
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
         <Breadcrump/>
         <Header/>
         <City/>
+        <MainCard/>
       </div>
     </div>
   )

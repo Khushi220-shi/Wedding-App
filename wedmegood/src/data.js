@@ -860,3 +860,143 @@ export const city=[
   },
 
 ]
+export const venueCard=[
+  {
+    img:'./images/venueCard/1.webp',
+    title:'Radisson Blu Pune Hinjawadi',
+    rating:'4.8 (3 reviews)',
+    location:'Hinjewadi, Pimpri Chinch...',
+    venue:'4 Star & Above Wedding Hotels...',
+    capacity:'150-400 pax',
+    veg:'1,800',
+    nonVeg:'2,000',
+    room:'152 Rooms',
+    text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus eget ligula porttitor accumsan...',
+    image1:'./images/venueCard/1.1.webp',
+    image2:'./images/venueCard/1.2.webp',
+    image3:'./images/venueCard/1.3.webp',
+    image4:'./images/venueCard/1.4.webp',
+  },
+  {
+    img:'./images/venueCard/2.webp',
+    title:'Radisson Blu Pune Hinjawadi',
+    rating:'4.8 (3 reviews)',
+    location:'Hinjewadi, Pimpri Chinch...',
+    venue:'4 Star & Above Wedding Hotels...',
+    capacity:'150-400 pax',
+    veg:'1,800',
+    nonVeg:'2,000',
+    room:'152 Rooms',
+    text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus eget ligula porttitor accumsan...',
+    image1:'./images/venueCard/2.1.webp',
+    image2:'./images/venueCard/2.2.webp',
+    image3:'./images/venueCard/2.3.webp',
+    image4:'./images/venueCard/2.4.webp',
+  },
+  {
+    img:'./images/venueCard/3.1.webp',
+    title:'Radisson Blu Pune Hinjawadi',
+    rating:'4.8 (3 reviews)',
+    location:'Hinjewadi, Pimpri Chinch...',
+    venue:'4 Star & Above Wedding Hotels...',
+    capacity:'150-400 pax',
+    veg:'1,800',
+    nonVeg:'2,000',
+    room:'152 Rooms',
+    text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus eget ligula porttitor accumsan...',
+    image1:'./images/venueCard/3.1.webp',
+    image2:'./images/venueCard/3.2.webp',
+    image3:'./images/venueCard/3.3.webp',
+    image4:'./images/venueCard/3.4.webp',
+  },
+  {
+    img:'./images/venueCard/4.1.webp',
+    title:'Radisson Blu Pune Hinjawadi',
+    rating:'4.8 (3 reviews)',
+    location:'Hinjewadi, Pimpri Chinch...',
+    venue:'4 Star & Above Wedding Hotels...',
+    capacity:'150-400 pax',
+    veg:'1,800',
+    nonVeg:'2,000',
+    room:'152 Rooms',
+    text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus eget ligula porttitor accumsan...',
+    image1:'./images/venueCard/4.1.webp',
+    image2:'./images/venueCard/4.2.webp',
+    image3:'./images/venueCard/4.3.webp',
+    image4:'./images/venueCard/4.4.webp',
+  },
+]
+export const venuetype=[
+ 
+  {
+    img:'./images/venueType/1.webp',
+    text:'Banquet Halls'
+  },
+  {
+    img:'./images/venueType/2.webp',
+    text:'Resorts'
+  },
+  {
+    img:'./images/venueType/3.webp',
+    text:'FarmHouses'
+  },
+  {
+    img:'./images/venueType/4.webp',
+    text:'Poolside Venues'
+  },
+  {
+    img:'./images/venueType/5.webp',
+    text:'Top Rated Venues'
+  },
+  {
+    img:'./images/venueType/6.webp',
+    text:'Venues with deals'
+  },
+]
+
+export const venueBudget=[
+ 
+  {
+    img:'./images/venueBudget/1.webp',
+    text:'Budget friendly'
+  },
+  {
+    img:'./images/venueBudget/2.webp',
+    text:'Value of money'
+  },
+  {
+    img:'./images/venueBudget/3.webp',
+    text:'Premium Properties'
+  },
+  {
+    img:'./images/venueBudget/4.webp',
+    text:'Luxury Properties'
+  }
+]
+export const review=[
+  {
+    img:'./images/reviews/1.jpg',
+    title:'S N Palace',
+    text:'Very nice experience, will tell my friends to have a wedding here , banquets halls are nice and comfy',
+    honor:'Reviewed By: Shrikant Agrawal | 17 Jul 2024'
+  },
+  {
+    img:'./images/reviews/2.webp',
+    title:'Amaraa Farm',
+    text:'pathetic experience, i booked Amara Farms for family function, and unfortunately, the experience was quite disappointing. A lady named Perveen was extremely rud... Read more',
+    honor:'Reviewed By: ANKIT YADAV | 17 Jul 2024'
+  },
+  {
+    img:'./images/reviews/3.webp',
+    title:'Rama Banquet Hall Noida',
+    text:'Nice place for those who wish to host a gathering in Noida,the decor and catering were really nice',
+    honor:'Reviewed By: Pamidi Bala Sumanth | 16 Jul 2024'
+  },
+  {
+    img:'./images/reviews/4.webp',
+    title:'Hotel La Hill Vista Inn',
+    text:'Amazing budget friendly property for destination wedding.. Had my wedding here last month and they organized it very professionally with a comfortable stay!',
+    honor:'Reviewed By: Anukul | 16 Jul 2024'
+  },
+
+]

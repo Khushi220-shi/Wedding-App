@@ -130,9 +130,12 @@ const Header1 = () => {
                   </div>
                 </li>
                 <li className="nav-item dropdown dropdown3">
-                  <a className="nav-link text-light" href="#">
-                    Photos
-                  </a>
+                <Link className="nav-link text-light"  onClick={(e) => {
+                    e.preventDefault();
+                    Navigate("/MainPhoto");
+                  }} >
+                    photos
+                  </Link>
                   <div className="dropdown-menu " style={{ padding: "25px" }}>
                     <div className="d-flex justify-content-between">
                       <div>
