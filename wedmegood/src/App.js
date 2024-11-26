@@ -12,21 +12,10 @@ import Copyright from './components/Copyright';
 
 function App() {
   const location = useLocation();
-  const isLoginOrRegistration = location.pathname === '/Login' || location.pathname === '/Registration' || location.pathname === '/';
-
+  
   return (
     <div>
-      {!isLoginOrRegistration && <Header />}
-      {!isLoginOrRegistration && <Header1 />}
-      <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/Registration' element={<Registration/>}></Route>
-        <Route path='/Login' element={<Login/>}/>
-        <Route path='/main' element={<Main/>}/>
-        <Route path='/MainPhoto' element={<MainPhoto/>}/>
-      </Routes>
-      {!isLoginOrRegistration && <Footer1 />}
-      {!isLoginOrRegistration && <Copyright />}
+      <h1>hello</h1>
     </div>
   );
 }
