@@ -1000,3 +1000,125 @@ export const review=[
   },
 
 ]
+export const weddingPhotos=[
+  {
+    img:'./images/photos/1.jpeg',
+    title:'Rakul Preet Singh and Jackky Bhagnani',
+    text:'Real Wedding, Goa',
+    des:'Cute feather detailing mini dress with fun bridal sneakers'
+  },
+  {
+    img:'./images/photos/2.jpeg',
+    title:'Nidhi and Rohan',
+    text:'Real Wedding, USA',
+    des:'Fun couple portrait in monochrome with bride in a white...'
+  },
+  {
+    img:'./images/photos/3.jpeg',
+    title:'Madhura and Veer',
+    text:'Real Wedding, Jaipur',
+    des:'Fun bridal twirling shot in a turquoise blue floral lehenga...'
+  },
+  {
+    img:'./images/photos/4.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/5.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/6.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/7.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/8.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/9.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/10.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/11.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/12.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/13.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/14.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/15.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/16.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/17.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/18.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/19.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+  {
+    img:'./images/photos/20.jpeg',
+    title:'Shimul and Rahul',
+    text:'Real Wedding, Goa',
+    des:'This timeless bridal portrait in an all-white lehenga with a...'
+  },
+]

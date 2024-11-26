@@ -311,3 +311,51 @@ height: 100%;
   border-bottom-color: #E72E77;
  
 }
+.photo-container {
+  background-color:transparent; 
+  padding: 20px;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between cards */
+  justify-content: space-between; /* Ensure cards are evenly spaced */
+}
+
+.photo-card {
+  flex: 1 1 calc(25% - 20px); /* 4 cards per row, minus the gap */
+  border-radius: 8px; /* Optional: add rounded corners */
+  overflow: hidden; /* Ensure content fits within the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-img {
+  width: 100%;
+  height: auto;
+}
+
+.photo-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.photo-text {
+  color: #e72e77;
+  font-size: 14px;
+}
+
+.photo-description {
+  color: #6c757d; /* Adjust color if needed */
+  font-size: 12px;
+  margin-top: auto; /* Pushes the description to the bottom */
+}
