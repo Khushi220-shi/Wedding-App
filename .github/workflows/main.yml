@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: E:\reactjs\project2\wedding1\Wedding-App
+        working-directory: E:\reactjs\project2\wedding1\Wedding-App\wedmegood
 
       - name: Build project
         run: npm run build
