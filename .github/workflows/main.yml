@@ -23,7 +23,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm install
         with:
           working-directory: E:\reactjs\project2\wedding1\Wedding-App
 
