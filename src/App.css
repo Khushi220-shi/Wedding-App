@@ -1,0 +1,361 @@
+@font-face{
+  font-family: roboto;
+  src: url(../src/assets/fonts/Roboto-Regular.ttf);
+}
+@font-face{
+  font-family: proxima;
+  src: url(./assets/fonts/proxima/Rene\ Bieder\ \ Milliard\ Book.otf);
+}
+@font-face {
+  font-family:italic;
+  src: url(./assets/fonts/italic/EBGaramond-VariableFont_wght.ttf);
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: proxima;
+}
+ p{
+  margin-bottom: 3px !important;
+ }
+img{
+  width: 100%;
+  
+}
+.city-menu{
+  margin-left: -200px !important;
+}
+.list li{
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+
+}
+.list li:hover{
+  color: black;
+  font-size: 16px;
+}
+
+.wedding-img{
+ background-image: linear-gradient(to top ,black,transparent,transparent),url(./assets/home.webp);
+  background-size: cover;
+  height: 800px;
+}
+.more{
+  font-size: 14px;
+}
+.more:hover{
+  text-decoration: underline;
+  color: #B4245D;
+  font-size: 15px;
+}
+
+.slick-arrow{
+  width: 30px !important;
+  height: 29px !important;
+  padding: 5px !important;
+  padding-top: 6px !important;
+  border-radius: 100%;
+  background-color: rgb(209, 208, 208)!important;
+ 
+  z-index: 1 !important;
+}
+.slick-arrow:hover{
+  background-color: #E72E77 !important;
+  box-shadow: 1px 1px 20px #E72E77;
+}
+.search:hover{
+  color: #E72E77;
+}
+
+.zoom{
+  overflow: hidden;
+}
+ .zoom img{
+  /* width: 100%; */
+  transition: 0.5s all ease-in-out;
+}
+.zoom:hover img {
+  transform: scale(1.3);
+}
+.gallery:hover{
+  color: #E72E77;
+}
+.heading2:hover{
+  color: #af2b60 !important;
+}
+.abc{
+  clip-path: ellipse(99% 140px at 100% 50%);
+}
+.max-width-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 50px;
+}
+.know:hover{
+  background-color: #E72E77 !important;
+  color: white !important;
+}
+.download:hover{
+  background-color: #871744 !important;
+}
+/* src/VendorButton.css */
+.vendor-button {
+  background-color: white;
+  color: #3498DB !important;
+  padding: 10px 20px;
+  border: 2px solid #3498DB;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+ 
+}
+.vendor-button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #3498DB;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  transition: transform 0.3s ease-in-out;
+}
+.vendor-button::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #ffffff;
+  border-right: 20px solid transparent;
+  /* clip-path: polygon(0 100%, 100% 0, 100% 100%); */
+  transition: all 0.3s ease-in-out;
+}
+
+.vendor-button:hover {
+  background-color: #3498DB;
+  color: white !important;
+  box-shadow: inset 0 0 0 0 #3498DB;
+}
+
+
+.vendor-button:hover::before {
+  bottom: 0;
+  right: 0;
+  border-bottom-color: #3498DB;
+}
+.vendor-button:hover::after {
+  top: 0;
+  left: 0;
+  border-bottom-color: white;
+ 
+}
+/* src/VendorButton.css */
+.vendor-button1 {
+  background-color: white;
+  color: #E72E77 !important;
+  padding: 10px 20px;
+  border: 2px solid #E72E77;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+ 
+}
+.vendor-button1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #E72E77;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  transition: transform 0.3s ease-in-out;
+}
+.vendor-button1::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #ffffff;
+  border-right: 20px solid transparent;
+  /* clip-path: polygon(0 100%, 100% 0, 100% 100%); */
+  transition: all 0.3s ease-in-out;
+}
+
+.vendor-button1:hover {
+  background-color: #E72E77;
+  color: white !important;
+  box-shadow: inset 0 0 0 0 #E72E77;
+}
+
+
+.vendor-button1:hover::before {
+  bottom: 0;
+  right: 0;
+  border-bottom-color: #E72E77;
+}
+.vendor-button1:hover::after {
+  top: 0;
+  left: 0;
+  border-bottom-color: white;
+ 
+}
+.type li{
+  color: #333;
+  font-size: 14px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.type li:hover{
+  font-size: 15px;
+  color: black;
+}
+.under:hover{
+  text-decoration: underline !important;
+  text-decoration-color: black;
+  text-underline-offset: 8px;
+}
+.venue-text{
+  color: #333;
+  cursor: pointer;
+}
+.venue-text:hover{
+  color: black;
+  font-weight: 600;
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+.text-body:hover{
+  color: blue !important;
+}
+.header-img{
+  width: 200px;
+ border-radius: 10px;
+}
+.vendor-button2 {
+  background-color: #E72E77;
+  color:white !important;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+ 
+}
+.vendor-button2::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #80133e;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  transition: transform 0.3s ease-in-out;
+}
+.vendor-button2::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #E72E77;
+  border-right: 20px solid transparent;
+  /* clip-path: polygon(0 100%, 100% 0, 100% 100%); */
+  transition: all 0.3s ease-in-out;
+}
+
+.vendor-button2:hover {
+  background-color: #80133e;
+  color: white !important;
+  box-shadow: inset 0 0 0 0 #E72E77;
+}
+
+
+.vendor-button2:hover::before {
+  bottom: 0;
+  right: 0;
+  border-bottom-color: #E72E77;
+}
+.vendor-button2:hover::after {
+  top: 0;
+  left: 0;
+  border-bottom-color: #E72E77;
+ 
+}
+.photo-container {
+  background-color:transparent; 
+  padding: 20px;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between cards */
+  justify-content: space-between; /* Ensure cards are evenly spaced */
+}
+
+.photo-card {
+  flex: 1 1 calc(25% - 20px); /* 4 cards per row, minus the gap */
+  border-radius: 8px; /* Optional: add rounded corners */
+  overflow: hidden; /* Ensure content fits within the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-img {
+  width: 100%;
+  height: auto;
+}
+
+.photo-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.photo-text {
+  color: #e72e77;
+  font-size: 14px;
+}
+
+.photo-description {
+  color: #6c757d; /* Adjust color if needed */
+  font-size: 12px;
+  margin-top: auto; /* Pushes the description to the bottom */
+}
