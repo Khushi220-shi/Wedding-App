@@ -24,6 +24,8 @@ jobs:
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
+        with:
+          working-directory: E:\reactjs\project2\wedding1\Wedding-App\wedmegood
 
       - name: Build project
         run: npm run build
