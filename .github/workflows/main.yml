@@ -22,7 +22,7 @@ jobs:
         chmod 600 private_key
         mkdir -p ~/.ssh
         ssh-keyscan -H your-server-ip >> ~/.ssh/known_hosts
-        ssh -i private_key user@ 192.168.1.36"
+        ssh -i private_key user@  103.251.19.235"
           cd /var/www/project && git pull && sudo systemctl restart your-service
         "
  
