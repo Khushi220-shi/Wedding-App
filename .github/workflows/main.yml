@@ -23,7 +23,7 @@ jobs:
         mkdir -p ~/.ssh
         ssh-keyscan -H 103.251.19.235 >> ~/.ssh/known_hosts
         ssh -i private_key user@103.251.19.235 "
-          cd e/reactjs/project2/wedding1/Wedding-App && git pull && sudo systemctl restart apache2
+        cd e/reactjs/project2/wedding1/Wedding-App && git pull && sudo systemctl restart apache2
            "
 
     - name: Cleanup SSH Key
