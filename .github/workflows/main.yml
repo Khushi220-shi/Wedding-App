@@ -1,24 +1,32 @@
-name: Deploy to Server
+name: Deploy to Server on Windows
  
 on:
   push:
     branches:
-      - main  # Change to your branch name if needed
+      - main
  
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
  
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
  
-    - name: Deploy to Server
+    - name: Setup SSH Key
+      shell: bash
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
         echo "${SSH_PRIVATE_KEY}" > private_key
         chmod 600 private_key
-        ssh -i private_key -o StrictHostKeyChecking=no user@your-server-ip "
+        mkdir -p ~/.ssh
+        ssh-keyscan -H your-server-ip >> ~/.ssh/known_hosts
+        ssh -i private_key user@your-server-ip "
           cd /var/www/project && git pull && sudo systemctl restart your-service
         "
+ 
+    - name: Cleanup SSH Key
+      shell: bash
+      run: |
+        rm -f private_key
